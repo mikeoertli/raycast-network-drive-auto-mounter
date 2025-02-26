@@ -1,7 +1,7 @@
 # Raycast Network Drive Auto-Mount Utility
 
 <p align="center">
-<img width="192" alt="Light/Dark Mode Icon" src="images/disk-icon.png"/>
+<img width="192" alt="Light/Dark Mode Icon" src="images/drive-icon.png"/>
 </p>
 
 This script command verifies network drives are mounted, and if not found, mounts them via finder (allowing for credential

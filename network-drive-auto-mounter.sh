@@ -6,7 +6,7 @@
 # @raycast.mode fullOutput
 
 # Optional parameters:
-# @raycast.icon images/disk-icon.png
+# @raycast.icon images/drive-icon.png
 # @raycast.packageName Utilities
 # @raycast.argument1 { "type": "text", "placeholder": "override config file", "percentEncoded": true, "optional": true }
 
