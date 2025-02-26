@@ -1,0 +1,3 @@
+smb://mynas/share1
+smb://my-other-nas/storage_share
+smb://mynas/share2
