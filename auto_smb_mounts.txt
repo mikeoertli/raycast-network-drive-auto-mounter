@@ -1,5 +1,5 @@
-smb://mynas/share1
+smb://mynas/share1 # comments are supported
 smb://my-other-nas/storage_share
 smb://mynas/share2
-#smb://mynas/ignored_share
-//smb://mynas/another_ignored_share
+#smb://mynas/ignored_share # can comment on ignored entries too
+//smb://mynas/another_ignored_share # comments can be any non-alphanumeric (non-whitespace) character

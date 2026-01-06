@@ -40,6 +40,13 @@ while IFS= read -r line || [[ -n $line ]]; do
   line="${line#"${line%%[![:space:]]*}"}"
   line="${line%"${line##*[![:space:]]}"}"
 
+  # Strip inline comments that follow a network mount path (comments start with '#' char).
+  if [[ $line =~ ^([^#]*)[[:space:]]+\# ]]; then
+    line="${BASH_REMATCH[1]}"
+    # Trim trailing whitespace again
+    line="${line%"${line##*[![:space:]]}"}"
+  fi
+
   # Skip empty lines and lines whose first non-space character is non-alphanumeric (comments/special)
   [ -z "$line" ] && continue
   case "$line" in
