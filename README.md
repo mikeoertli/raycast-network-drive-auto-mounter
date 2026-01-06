@@ -4,8 +4,8 @@
 <img width="192" alt="Light/Dark Mode Icon" src="images/drive-icon.png"/>
 </p>
 
-This script command verifies network drives are mounted, and if not found, mounts them via finder (allowing for credential
-storage in keychain).
+This script command verifies network drives are mounted, and if not found, mounts them via macOS Finder (allowing for credential
+storage in keychain). It is intended to be run as a Raycast Script Command.
 
 ## Configuration
 
