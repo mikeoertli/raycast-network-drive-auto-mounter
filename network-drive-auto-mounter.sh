@@ -35,7 +35,17 @@ fi
 smbURLs=()
 
 # Read the file line by line.
-while IFS= read -r line; do
+while IFS= read -r line || [[ -n $line ]]; do
+  # Trim leading/trailing whitespace
+  line="${line#"${line%%[![:space:]]*}"}"
+  line="${line%"${line##*[![:space:]]}"}"
+
+  # Skip empty lines and lines whose first non-space character is non-alphanumeric (comments/special)
+  [ -z "$line" ] && continue
+  case "$line" in
+    [![:alnum:]]*) continue ;;
+  esac
+
   smbURLs+=("$line")
 done < "$configFile"
 

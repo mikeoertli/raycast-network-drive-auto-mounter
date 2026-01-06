@@ -1,3 +1,5 @@
 smb://mynas/share1
 smb://my-other-nas/storage_share
 smb://mynas/share2
+#smb://mynas/ignored_share
+//smb://mynas/another_ignored_share

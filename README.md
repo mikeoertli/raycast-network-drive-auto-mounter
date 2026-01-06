@@ -16,10 +16,16 @@ the default path of `$HOME/.config/raycast/auto_smb_mounts.txt`.
 smb://mynas/share1
 smb://my-other-nas/storage_share
 smb://mynas/share2
+#smb://mynas/ignored_share
 
 ```
 
 (Note the newline after the last entry.)
+
+### Commented Entries
+
+The `txt` file now supports commented lines. Any line that begins (after trimming whitespace) with a non-alphanumeric character is
+treated as a commented line and ignored. This means that common comment prefixes like `#`, `--` and `//` are all supported.
 
 ### Add Custom Script Directory
 
